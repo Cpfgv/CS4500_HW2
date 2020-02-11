@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        System.out.println("Welcome to near miss calculator");
+        System.out.println("Welcome to the near miss calculator");
         double n,k;
         double z;
         double sum;
@@ -21,13 +21,13 @@ public class Main {
             try{
                 scan = new Scanner(System.in);
                 n = scan.nextInt();
-                if(n <2 ){
-                    System.out.println("The input was invalid.Please enter a integer greater than 2 ");
+                if(n <3 ){
+                    System.out.println("The input was invalid. Please enter an integer greater than 2 ");
                 }else{
                     break;
                 }
             }catch(Exception e){
-                System.out.println("The input was invalid.Please enter a integer greater than 2 ");
+                System.out.println("The input was invalid. Please enter an integer greater than 2 ");
             }
         }
 
@@ -36,7 +36,7 @@ public class Main {
             try{
                 scan = new Scanner(System.in);
                 k = scan.nextInt();
-                if(k <=0 || k>1000 ){
+                if(k <=10 || k>1000 ){
                     System.out.println("The input was invalid.Please enter a integer such that 0<k<1000 ");
                 }else{
                     break;
