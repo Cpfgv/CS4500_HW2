@@ -4,7 +4,25 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+Near Miss Calculator
+Main.java
+No external files
+Creates no external files
+cwdh4@mail.umsl.edu, bjdq88@mail.umsl.edu, cpfgv@mail.umsl.edu
+CMPSCI4500-002
+Charles Wyatt, Benjamin Donahue, Chaitali Patel
+02/12/2020
+This program takes input from the user (n for the power to raise x, y, z, and k for the number of iterations the program runs)
+and calculates the near misses based on Fermat's last theorem. It then displays the results and how close the answer is to the
+formula x^n + y^n = z^n in percentages.
+No outside resources were used in the making of this program (for better or worse).
+**/
+
 public class Main {
+
+//This is the main function
+//First we initialize out variables and introduce our calculator
     public static void main(String[] args){
         System.out.println("Welcome to near miss calculator");
         double n,k;
@@ -15,11 +33,16 @@ public class Main {
         String Exit;
         Map valueMap= new HashMap();
         Scanner scan;
+		//In order for our outputs to look orderly, we need to format the decimal output
         DecimalFormat formatter = new DecimalFormat("#.##############");
 
         do{
             int resultCount = 0;
+			//Here we ask our user to enter the power by which we raise out variables x and y
             System.out.println("Please enter an integer value for n greater than 2, but less than 12");
+		//However, we need to sanitize our inputs so the user can't enter number out of range
+		//Nor do we want them entering characters or strings...
+		//So we ask them to enter a valid input until they finally do
             while(true){
                 try{
                     scan = new Scanner(System.in);
@@ -35,6 +58,9 @@ public class Main {
                     System.out.println("The input was invalid.Please enter a integer greater than 2 ");
                 }
             }
+			
+		//Here we ask the user for the upper limit for how many times the algorithm is run
+		//And of course make sure the inputs are valid
             System.out.println("Please enter an integer value for k greater than 10, but less than 1000");
             while(true){
                 try{
