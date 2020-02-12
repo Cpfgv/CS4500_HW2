@@ -38,7 +38,7 @@ public class Main {
 
         do{
             int resultCount = 0;
-			//Here we ask our user to enter the power by which we raise out variables x and y
+		//Here we ask our user to enter the power by which we raise out variables x and y
             System.out.println("Please enter an integer value for n greater than 2, but less than 12");
 		//However, we need to sanitize our inputs so the user can't enter number out of range
 		//Nor do we want them entering characters or strings...
@@ -48,14 +48,14 @@ public class Main {
                     scan = new Scanner(System.in);
                     n = scan.nextInt();
                     if(n <= 2){
-                        System.out.println("The input was invalid.Please enter a integer greater than 2 ");
+                        System.out.println("The input was invalid. Please enter a integer greater than 2 ");
                     }else if(n > 11){
-                        System.out.println("The input was invalid.Please enter a integer less than than 12 ");
+                        System.out.println("The input was invalid. Please enter a integer less than than 12 ");
                     }else{
                         break;
                     }
                 }catch(Exception e){
-                    System.out.println("The input was invalid.Please enter a integer greater than 2 ");
+                    System.out.println("The input was invalid. Please enter a integer greater than 2 ");
                 }
             }
 			
@@ -67,12 +67,12 @@ public class Main {
                     scan = new Scanner(System.in);
                     k = scan.nextInt();
                     if(k <= 10 || k > 1000 ){
-                        System.out.println("The input was invalid.Please enter a integer such that 10<k<1000 ");
+                        System.out.println("The input was invalid. Please enter a integer such that 10<k<1000 ");
                     }else{
                         break;
                     }
                 }catch(Exception e){
-                    System.out.println("The input was invalid.Please enter a integer such that 10<k<1000 ");
+                    System.out.println("The input was invalid. Please enter a integer such that 10<k<1000 ");
                 }
             }
             for(int i=10; i <=k; i++){
