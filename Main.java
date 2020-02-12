@@ -34,7 +34,7 @@ public class Main {
         Map valueMap= new HashMap();
         Scanner scan;
 		//In order for our outputs to look orderly, we need to format the decimal output
-        DecimalFormat formatter = new DecimalFormat("#.##############");
+        DecimalFormat formatter = new DecimalFormat("#.#################################");
 
         do{
             int resultCount = 0;
@@ -100,7 +100,7 @@ public class Main {
                         System.out.print(", ");
                         System.out.print("z="+(int)z);
                         System.out.print(", ");
-                        System.out.print("Actual Miss="+(int)miss);
+                        System.out.print("Actual Miss="+(long)miss);
                         System.out.print(", ");
                         System.out.println("Smallest Relative Miss="+ formatter.format(localRelativeMiss*100) + "%");//localRelativeMiss*100 + "%"); //
                         resultCount++;
