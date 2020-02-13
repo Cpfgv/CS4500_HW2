@@ -49,9 +49,9 @@ public class Main {
                     scan = new Scanner(System.in);
                     n = scan.nextInt();
                     if(n <= 2){
-                        System.out.println("The input was invalid. Please enter a integer greater than 2 ");
+                        System.out.println("The input was invalid. Please enter an integer greater than 2 ");
                     }else if(n > 11){
-                        System.out.println("The input was invalid. Please enter a integer less than than 12 ");
+                        System.out.println("The input was invalid. Please enter an integer less than than 12 ");
                     }else{
                         break;
                     }
@@ -122,7 +122,7 @@ public class Main {
                 if("n".equals(Exit) || "y".equals(Exit)){
                     break;
                 }else{
-                    System.out.println("The input was invalid.Please enter character either 'y' or 'n'.");
+                    System.out.println("The input was invalid. Please enter character either 'y' or 'n'.");
                     Exit = scan.nextLine();
                 }
             }while(true);
