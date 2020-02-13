@@ -95,16 +95,19 @@ public class Main {
                     localRelativeMiss = miss/sum;
                     if(localRelativeMiss<relativeMiss || relativeMiss==0){
                         relativeMiss = localRelativeMiss;
-                        System.out.print("x="+(int)x);
-                        System.out.print(", ");
-                        System.out.print("y="+(int)y);
-                        System.out.print(", ");
-                        System.out.print("z="+(int)z);
-                        System.out.print(", ");
-                        System.out.print("Actual Miss="+miss);
-                        System.out.print(", ");
-                        System.out.println("Smallest Relative Miss="+ formatter.format(localRelativeMiss*100) + "%");//localRelativeMiss*100 + "%"); //
-                        resultCount++;
+						//Only print if the relative miss is less than 10%
+						if (localRelativeMiss < 0.10){
+							System.out.print("x="+(int)x);
+							System.out.print(", ");
+							System.out.print("y="+(int)y);
+							System.out.print(", ");
+							System.out.print("z="+(int)z);
+							System.out.print(", ");
+							System.out.print("Actual Miss="+miss);
+							System.out.print(", ");
+							System.out.println("Smallest Relative Miss="+ formatter.format(localRelativeMiss*100) + "%");//localRelativeMiss*100 + "%"); //
+							resultCount++;
+						}
                     }
                     
                 }
