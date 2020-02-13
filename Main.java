@@ -101,7 +101,7 @@ public class Main {
                         System.out.print(", ");
                         System.out.print("z="+(int)z);
                         System.out.print(", ");
-                        System.out.print("Actual Miss="+(long)miss);
+                        System.out.print("Actual Miss="+miss);
                         System.out.print(", ");
                         System.out.println("Smallest Relative Miss="+ formatter.format(localRelativeMiss*100) + "%");//localRelativeMiss*100 + "%"); //
                         resultCount++;
