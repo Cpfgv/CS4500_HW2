@@ -24,7 +24,7 @@ public class Main {
 //This is the main function
 //First we initialize out variables and introduce our calculator
     public static void main(String[] args){
-        System.out.println("Welcome to near miss calculator");
+        System.out.println("Welcome to the near miss calculator");
         double n,k;
         double z;
         double sum;
