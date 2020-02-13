@@ -36,6 +36,7 @@ public class Main {
 		//In order for our outputs to look orderly, we need to format the decimal output
         DecimalFormat formatter = new DecimalFormat("#.#################################");
 
+		//a do / while loop so the program can be run multiple times
         do{
             int resultCount = 0;
 		//Here we ask our user to enter the power by which we raise out variables x and y
